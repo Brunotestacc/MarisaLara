@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Marisa Lara Psicanalista, Terapeuta Holística e Hipnoterapeuta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Analisis</h1>
+            <h2>Terapias Integradas</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+                <li><a href="{{ url_for('servicos') }}">Serviços</a></li>
+                <li><a href="{{ url_for('sintomas') }}">Sintomas</a></li>
+                <li><a href="{{ url_for('contato') }}">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="servico">
+            <h2>Psicanálise</h2>
+            <img src="{{ url_for('static', filename='img/psicanalise.jpg') }}" alt="Psicanálise">
+            <p>A psicanálise é uma abordagem teórica e prática criada por Sigmund Freud no final do século XIX, que busca compreender a mente
+                humana, os pensamentos, emoções e comportamentos. Ela é tanto uma teoria sobre o funcionamento psíquico quanto um método
+                terapêutico para tratar distúrbios emocionais e conflitos internos.</p>
+            <h2>Princípios Fundamentais</h2>
+            <ul class="principios-detalhados">
+                <li>
+                    <h3>Inconsciente</h3>
+                    <p>Parte da mente que contém desejos, memórias e impulsos reprimidos, que influenciam nossas ações sem que tenhamos consciência.</p>
+                </li>
+                <li>
+                    <h3>Conflitos Psíquicos</h3>
+                    <p>Os conflitos entre os diferentes aspectos da mente (como id, ego e superego) podem gerar sintomas emocionais e comportamentais.</p>
+                </li>
+                <li>
+                    <h3>Repressão</h3>
+                    <p>Mecanismo pelo qual conteúdos desconfortáveis são "escondidos" no inconsciente, mas continuam a afetar o indivíduo.</p>
+                </li>
+                <li>
+                    <h3>Transferência</h3>
+                    <p>Durante o processo terapêutico, o paciente projeta sentimentos e padrões de relacionamento em relação ao analista, permitindo explorar
+                        dinâmicas emocionais profundas.</p>
+                </li>
+                <li>
+                    <h3>Livre Associação</h3>
+                    <p>Método em que o paciente fala livremente, sem censura, permitindo que conteúdos inconscientes venham à tona.</p>
+                </li>
+            </ul>
+            
+            <h2>Objetivos da Psicanálise</h2>
+            <ul class="objetivos-lista">
+                <li>
+                    <h3>Autoconhecimento</h3>
+                    <p>Promover o auto conhecimento e a integração psíquica.</p>
+                </li>
+                <li>
+                    <h3>Resolução de Conflitos</h3>
+                    <p>Ajudar o indivíduo a compreender e resolver conflitos internos.</p>
+                </li>
+                <li>
+                    <h3>Desenvolvimento Pessoal</h3>
+                    <p>Tornar consciente o que está no inconsciente.</p>
+                </li>
+                <li>
+                    <h3>Melhoria nas Relações</h3>
+                    <p>Compreender e modificar padrões relacionais disfuncionais, desenvolvendo relações mais saudáveis e satisfatórias.</p>
+                </li>
+                <li>
+                    <h3>Alívio do Sofrimento</h3>
+                    <p>Reduzir sintomas emocionais e melhorar a qualidade de vida.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="servico">
+            <h2>Hipnoterapia</h2>
+            <img src="{{ url_for('static', filename='img/hipnoterapia.jpg') }}" alt="Hipnoterapia">
+            <p>A hipnoterapia é uma abordagem terapêutica que utiliza a hipnose como ferramenta principal para tratar problemas emocionais,
+                comportamentais, psicológicos e até físicos. Durante o processo, o terapeuta induz o paciente a um estado de relaxamento
+                profundo (transe hipnótico), permitindo o acesso ao subconsciente, onde estão armazenados padrões de comportamento, crenças
+                e memórias que podem estar contribuindo para os problemas enfrentados.</p>
+            
+            <h2>Como Funciona a Hipnoterapia</h2>
+            <ul class="processo-hipnose">
+                <li>
+                    <h3>Indução ao Transe</h3>
+                    <p>O terapeuta guia o paciente a um estado de foco e relaxamento profundo, reduzindo a influência da mente consciente.</p>
+                </li>
+                <li>
+                    <h3>Acesso ao Subconsciente</h3>
+                    <p>Nesse estado, o paciente se torna mais receptivo a sugestões terapêuticas que visam modificar comportamentos ou crenças negativas.</p>
+                </li>
+                <li>
+                    <h3>Sugestões Terapêuticas</h3>
+                    <p>O terapeuta trabalha para substituir padrões prejudiciais por pensamentos e atitudes mais saudáveis.</p>
+                </li>
+                <li>
+                    <h3>Visualização Guiada</h3>
+                    <p>Utilização de imagens mentais e metáforas para promover mudanças positivas e alcançar objetivos desejados.</p>
+                </li>
+                <li>
+                    <h3>Integração Consciente</h3>
+                    <p>Após o transe, as mudanças sugeridas durante a hipnose são integradas à vida consciente do paciente.</p>
+                </li>
+            </ul>
+            
+            <h2>Indicações da Hipnoterapia</h2>
+            <p class="introducao-indicacoes">A hipnoterapia é utilizada para tratar uma ampla gama de condições, incluindo:</p>
+            <ul class="indicacoes-hipnose">
+                <li>
+                    <h3>Problemas Emocionais</h3>
+                    <p>Ansiedade, depressão, estresse pós-traumático (TEPT) e baixa autoestima.</p>
+                </li>
+                <li>
+                    <h3>Fobias e Medos</h3>
+                    <p>Trabalha na origem dos medos irracionais e fobias específicas, permitindo uma ressignificação das experiências traumáticas.</p>
+                </li>
+                <li>
+                    <h3>Hábitos Indesejados</h3>
+                    <p>Eficaz no tratamento de compulsões, vícios comportamentais e hábitos prejudiciais, ajudando na criação de novos padrões mais saudáveis.</p>
+                </li>
+                <li>
+                    <h3>Autoestima e Confiança</h3>
+                    <p>Fortalece a autoimagem e a autoconfiança através da modificação de crenças limitantes e programações negativas.</p>
+                </li>
+                <li>
+                    <h3>Dores Crônicas</h3>
+                    <p>Auxilia no manejo da dor através de técnicas de relaxamento e alteração da percepção sensorial, complementando tratamentos médicos.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="servico">
+            <h2>Terapias Holísticas</h2>
+            <img src="{{ url_for('static', filename='img/terapias-holísticas.jpg') }}" alt="Terapias Holísticas">
+            <p>A terapia holística é uma abordagem que considera a totalidade do indivíduo, incluindo aspectos físicos, emocionais, mentais
+                e espirituais, promovendo o bem-estar integral. Existem várias formas de tarapia holística, cada uma com suas características
+                e métodos. Abaixo estão as técnicas com as quais trabalhamos:</p>
+        </section>
+        <section class="servico">
+            <h2>Tarot Terapêutico</h2>
+            <img src="{{ url_for('static', filename='img/tarot.jpg') }}" alt="Tarot Terapêutico">
+            <p>O tarot terapêutico é uma abordagem do tarot que se concentra no autoconhecimento, no desenvolvimento pessoal e no equilíbrio
+                emocional. Diferente do tarot tradicional, que muitas vezes é associado à previdsão do futuro, o tarot terapêutico utiliza as
+                cartas como uma ferramenta simbólica para explorar questões internas, padrôes de comportamento e bloqueios emocionais.</p>
+            <h2>Como Funciona o Tarot Terapêutico</h2> 
+            <ul class="processo-tarot"> 
+                <li> 
+                    <h3>Simbologia e Reflexão</h3> 
+                    <p>As cartas do tarot são interpretadas como arquétipos e símbolos que ajudam a acessar o inconsciente, promovendo insights
+                        sobre situações de vida, emoções e desafios.</p> 
+                </li> 
+                <li>
+                    <h3>Autoconhecimento</h3>
+                    <p>O foco está em compreender os sentimentos, pensamentos e ações do consulente, ajudando-o a tomar decisões mais
+                        conscientes e alinhadas com seus objetivos.
+                    </p>
+                </li>
+                <li>
+                    <h3>Diálogo e interação</h3>
+                    <p>O terapeuta ou tarólogo conduz a leitura de forma acolhedora, promovendo um espaço seguro para reflexão e diálogo.</p>
+                </li>
+                <li>
+                    <h3>Integração com Terapias</h3>
+                    <p>Muitas vezes, o tarot terapêutico é usado em conjunto com outras práticas, como a Psicologia, a Psicanálise ou a Meditação.</p>
+                </li>
+             </ul>
+            <h2>Benefícios</h2>
+            <ul class="beneficios-tarot">
+                <li>
+                    <h3>Clareza Emocional</h3>
+                    <p>Ajuda a identificar e lidar com emoções reprimidas ou conflitos internos.</p>
+                </li>
+                <li>
+                    <h3>Empoderamento</h3>
+                    <p>Estimula o consulente a assumir a responsabilidade sobre situações e promove o crescimento pessoal.</p>
+                </li>
+                <li>
+                    <h3>Autodescoberta</h3>
+                    <p>Proporciona uma nova perspectiva sobre situações e promove o crescimento pessoal.</p>
+                </li>
+            </ul>
+            <p>O tarot terapêutico não se baseia em previsões deterministas, mas sim no uso das cartas como um espelho para a alma, permitindo
+                que o consulente encontre suas próprias respostas e caminhos.</p>
+        </section>
+        <section class="servico">       
+            <h2>Reiki</h2>
+            <img src="{{ url_for('static', filename='img/reiki.jpg') }}" alt="Reiki">
+            <p>Uma prática de cura energética que envolve a canalização de energia através das mãos para promover a cura e o bem-estar.</p>
+        </section>
+        <section class="servico">
+            <h2>Aromaterapia</h2>
+            <img src="{{ url_for('static', filename='img/aromaterapia.jpg') }}" alt="Aromaterapia">
+            <p>Combina a utilização de óleos essenciais para melhorar a saúde mental e física, proporcionando relaxamento e alívio de tensões.</p>
+        </section>
+        <section class="servico"> 
+            <h2>Terapia Florais de Bach</h2>
+            <img src="{{ url_for('static', filename='img/florais-de-bach.jpg') }}" alt="Terapia Florais de Bach">
+            <p>Utiliza essências de flores para tratar questões emocionais e comportamentais, ajudando a restaurar o equilíbrio emocional.</p>
+        </section>
+        <section class="servico">
+            <h2>Terapia Cognitivo-Comportamental (TCC)</h2>
+            <img src="{{ url_for('static', filename='img/tcc.jpg') }}" alt="Terapia Cognitivo-Comportamental">
+            <p>Embora seja uma forma de terapia psicológica mais convencional, pode ser considerada holística ao abordar a mente e o comportamento,
+                ajudando a lidar com emoções e pensamentos.</p>
+        </section>
+        <section class="servico">
+            <h2>Meditação</h2>
+            <img src="{{ url_for('static', filename='img/meditacao.jpg') }}" alt="Meditação">
+            <p>Técnicas que ajudam na concentração e relaxamento, promovendo a consciência plena e o equilíbrio emocional.</p>
+        </section>
+        <section class="servico">
+            <p>Cada uma dessas terapias pode ser utilizada isoladamenteou em combinação, dependendo das necessidades e preferências do
+                indivíduo. É muito importante, a empatia e confiança entre o Terapeuta e o Paciente.</p>
+        </section>
+
+        <section class="agendar">
+            <h2>Agende sua Consulta</h2>
+            <p>Entre em contato e comece sua jornada de transformação.</p>
+            <a href="https://wa.me/5515981480698?text=Olá%20Dra.%20Marisa!%20Gostaria%20de%20agendar%20uma%20consulta%20para%20conhecer%20melhor%20seu%20trabalho." class="botao-agendar" target="_blank">Vamos Conversar</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Marisa Lara Psicanalista, Terapeuta Holística e Hipnoterapeuta</p>
+    </footer>
+</body>
+</html>

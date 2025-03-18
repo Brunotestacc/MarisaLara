@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Marisa Lara Psicanalista, Terapeuta Holística e Hipnoterapeuta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Analisis</h1>
+            <h2>Terapias Integradas</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+                <li><a href="{{ url_for('servicos') }}">Serviços</a></li>
+                <li><a href="{{ url_for('sintomas') }}">Sintomas</a></li>
+                <li><a href="{{ url_for('contato') }}">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="sobre-container">
+        <div class="foto-container">
+            <img src="{{ url_for('static', filename='img/dra-marisa.jpg') }}" alt="Dra. Marisa Lara" class="foto-perfil">
+        </div>
+        <div class="bio">
+            <h2>Sou Marisa Lara Psicanalista, Terapeuta Holística e Hipnoterapeuta</h2>
+            <p>Com uma abordagem que integra ciência, autoconhecimento e espiritualidade, sou comprometida em ajudar as pessoas a encontrar 
+                equilíbrio emocional, mental e energético. Minha formação em Letras (sendo professora) e em Psicanálise me permite compreender 
+                profundamente os processos inconscientes que influenciam os comportamentos e emoções, enquanto as terapias holísticas ampliam 
+                essa visão, abordando o ser humano de maneira integral.</p>
+            <p>Utilizo técnicas como Reiki, aromaterapia, florais de Bach, meditação guiada, Taro Terapêutico, Hipnose... aliadas à escuta 
+                psicanalítica, para promover o bem-estar e a reconexão com a essência de cada indivíduo. Meu objetivo é criar um espaço 
+                acolhedor e seguro, onde você possa explorar suas emoções, desbloquear traumas e desenvolver uma vida mais leve e consciente.</p>
+            <p>Acredito que cada pessoa tem dentro de si os recursos necessários para transformar sua realidade. Minha missão é ser uma 
+                facilitadora nesse processo, ajudando você a acessar seu potencial e a viver de forma mais plena e alinhada com sua verdadeira 
+                essência.</p>
+            <p><strong>"Cuidar da mente e do espírito é um ato de amor-próprio."</strong></p>
+            <p>Seja bem-vindo(a) a essa jornada de autodescoberta e transformação!</p>
+        </div>
+
+        <section class="abordagem">
+            <h2>Abordagem Terapêutica</h2>
+            <p>Minha abordagem integra diferentes técnicas terapêuticas, permitindo um tratamento personalizado que se adapta às necessidades 
+                específicas de cada paciente. Trabalho com métodos que incluem:</p>
+            <ul>
+                <li>Psicanálise Contemporânea</li>
+                <li>Terapia Holística Integrativa</li>
+                <li>Hipnoterapia Clínica</li>
+            </ul>
+        </section>
+
+        <section class="experiencia">
+            <h2>Experiência Profissional</h2>
+            <p>Ao longo de minha carreira, desenvolvi expertise em:</p>
+            <ul>
+                <li>Tratamento de ansiedade e depressão</li>
+                <li>Terapia de casal e relacionamentos</li>
+                <li>Desenvolvimento pessoal e autoconhecimento</li>
+                <li>Gestão de estresse e traumas</li>
+            </ul>
+        </section>
+
+        <section class="valores">
+            <h2>Valores e Compromissos</h2>
+            <ul>
+                <li>Ética profissional e sigilo absoluto</li>
+                <li>Atendimento humanizado e acolhedor</li>
+                <li>Compromisso com o bem-estar do paciente</li>
+                <li>Atualização profissional constante</li>
+            </ul>
+        </section>
+
+        <section class="agendar">
+            <h2>Agende sua Consulta</h2>
+            <p>Entre em contato para nos conhecermos melhor.</p>
+            <a href="https://wa.me/5515981480698?text=Olá%20Dra.%20Marisa!%20Gostaria%20de%20agendar%20uma%20consulta%20para%20conhecer%20melhor%20seu%20trabalho." class="botao-agendar" target="_blank">Vamos Conversar</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Marisa Lara Psicanalista, Terapeuta Holística e Hipnoterapeuta</p>
+    </footer>
+</body>
+</html>

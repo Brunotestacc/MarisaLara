@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marisa Lara Psicanalista, Terapeuta Holística e Hipnoterapeuta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Analisis</h1>
+            <h2>Terapias Integradas</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+                <li><a href="{{ url_for('servicos') }}">Serviços</a></li>
+                <li><a href="{{ url_for('sintomas') }}">Sintomas</a></li>
+                <li><a href="{{ url_for('contato') }}">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="introducao">
+        <div class="intro-content">
+            <h2>Seja bem-vindo(a) ao nosso cantinho terapêutico: Analisis – Terapias Integradas</h2>
+            <p>Aqui, no Analisis, acreditamos na união entre mente, corpo e alma para promover equilíbrio, cura e transformação. Nossa abordagem 
+                combina as técnicas da psicanálise com práticas terapêuticas integradas, como hipnoterapia e terapias holísticas, para oferecer 
+                um cuidado completo e personalizado.</p>
+
+            <section class="agendar">
+                <a href="https://wa.me/5515981480698?text=Olá%20Dra.%20Marisa!%20Gostaria%20de%20agendar%20uma%20consulta%20para%20conhecer%20melhor%20seu%20trabalho." class="botao-agendar" target="_blank">Agende Sua Sessão</a>
+            </section>
+            
+            <ul class="intro-lista">
+                <li>Explore sua mente e compreenda seus padrões emocionais;</li>
+                <li>Restaure seu equilíbrio emocional e fortaleça sua autoestima;</li>
+                <li>Desperte sua energia interior e transforme sua vida;</li>
+                <li>Conquiste qualidade de vida com autoconhecimento e bem-estar.</li>
+            </ul>
+            
+            <p>Nosso objetivo é guiá-lo(a) em uma jornada de autodescoberta e renovação, ajudando você a encontrar harmonia e plenitude em todas 
+                as áreas da sua vida.</p>
+
+
+            <p class="destaque">Analisis: um convite para transformar sua história e viver com propósito.</p>
+        </div>
+    </section>
+
+    <main class="home-container">
+    <section class="servico sobre-destaque">
+        <h2>Sobre</h2>
+        <img src="{{ url_for('static', filename='img/dra-marisa.jpg') }}" alt="Marisa Lara">
+        <p class="titulo-psicanalista">Psicanalista, Hipnoterapeuta e Terapeuta Holística</p>
+        <p>Sou Marisa Lara, Psicanalista, Hipnoterapeuta e Terapeuta Holística, dedicada a ajudar pessoas a se reconectarem com sua essência, 
+            alcançarem equilíbrio emocional e transformarem suas vidas. O Analisis – Terapias Integradas nasceu para refletir minha missão de unir
+            ciência, autoconhecimento e práticas holísticas, para oferecer um espaço de cura e transformação. Aqui, cada jornada é única, e meu 
+            propósito é guiar você em um caminho de renovação e plenitude.</p>
+        <a href="{{ url_for('sobre') }}" class="botao-agendar">Saiba mais sobre mim →</a>
+    </section>
+
+        <section class="servico">
+            <h2>Serviços</h2>
+            <img src="{{ url_for('static', filename='img/servicos-home.jpg') }}" alt="Nossos Serviços">
+            <p>Oferecemos diversos tipos de terapia para atender suas necessidades específicas.</p>
+            <ul class="beneficios">
+                <li>Psicanálise</li>
+                <li>Hipnoterapia</li>
+                <li>Terapias Holísticas</li>
+            </ul>
+            <a href="{{ url_for('servicos') }}" class="botao-agendar">Conheça todos os serviços →</a>
+        </section>
+
+        <section class="servico">
+            <h2>O que nos faz sofrer?</h2>
+            <img src="{{ url_for('static', filename='img/ansiedade.jpg') }}" alt="Sintomas Comuns">
+            <ul class="beneficios">
+                <li>Angústia e Ansiedade</li>
+                <li>Solidão e Abandono</li>
+                <li>Tristeza e Falta de Autoconfiança</li>
+                <li>Insônia e Estresse</li>
+                <li>Mal-Estar nos Relacionamentos</li>
+            </ul>
+            <a href="{{ url_for('sintomas') }}" class="botao-agendar">Saiba mais sobre suas emoções →</a>
+        </section>
+
+        <section class="servico">
+            <h2>Contato</h2>
+            <img src="{{ url_for('static', filename='img/contato-home.jpg') }}" alt="Entre em Contato">
+            <p>Estou aqui para ajudar você em sua jornada de autoconhecimento e bem-estar.</p>
+            <ul class="beneficios">
+                <li>Atendimento online</li>
+                <li>Horários flexíveis</li>
+                <li>Primeira consulta de avaliação</li>
+                <li>Ambiente acolhedor e seguro</li>
+            </ul>
+            <a href="{{ url_for('contato') }}" class="botao-agendar">Entre em contato →</a>
+        </section>
+
+    </main>
+
+    <section class="agendar">
+        <a href="https://wa.me/5515981480698?text=Olá%20Dra.%20Marisa!%20Gostaria%20de%20agendar%20uma%20consulta%20para%20conhecer%20melhor%20seu%20trabalho." class="botao-agendar" target="_blank">Agende Sua Sessão</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - Marisa Lara Psicanalista, Terapeuta Holística e Hipnoterapeuta</p>
+    </footer>
+</body>
+</html>

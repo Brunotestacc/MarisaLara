@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Marisa Lara Psicanalista, Terapeuta Holística e Hipnoterapeuta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Analisis</h1>
+            <h2>Terapias Integradas</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+                <li><a href="{{ url_for('servicos') }}">Serviços</a></li>
+                <li><a href="{{ url_for('sintomas') }}">Sintomas</a></li>
+                <li><a href="{{ url_for('contato') }}">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Contato</h1>
+        <p>Entre em contato comigo através das seguintes plataformas:</p>
+
+        <div class="contact-method">
+            <i class="fab fa-whatsapp"></i>
+            <h2>WhatsApp</h2>
+            <p><a href="https://wa.me/5515981480698?text=Olá%20Dra.%20Marisa!%20Gostaria%20de%20agendar%20uma%20consulta%20para%20conhecer%20melhor%20seu%20trabalho." target="_blank">+55 15 98148-0698</a></p>
+        </div>
+
+        <div class="contact-method">
+            <i class="fab fa-instagram"></i>
+            <h2>Instagram</h2>
+            <p><a href="https://www.instagram.com/marisalara.psicanalista/" target="_blank">@marisalara.psicanalista</a></p>
+        </div>
+
+        <div class="informacoes-importantes">
+            <h2>Informações Importantes</h2>
+            <ul>
+                <li>Primeira consulta de avaliação é gratuita</li>
+                <li>Atendimento Online</li>
+                <li>Duração da Sessão: 50 minutos</li>
+                <li>Horário de Atendimento: Segunda a Sexta, das 10h às 18h</li>
+                <li>Mande mensagem pelo WhatsApp para conversarmos</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - Marisa Lara Psicanalista, Terapeuta Holística e Hipnoterapeuta</p>
+    </footer>
+</body>
+</html>

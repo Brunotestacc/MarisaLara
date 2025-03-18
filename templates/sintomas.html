@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintomas - Marisa Lara Psicanalista</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Analisis</h1>
+            <h2>Terapias Integradas</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+                <li><a href="{{ url_for('servicos') }}">Serviços</a></li>
+                <li><a href="{{ url_for('sintomas') }}">Sintomas</a></li>
+                <li><a href="{{ url_for('contato') }}">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="introducao">
+        <div class="intro-content">
+            <h1>
+                Na correria do dia a dia, é comum nos depararmos com uma variedade de sentimentos e emoções que, muitas vezes, nos deixam
+                confusos e sobrecarregados. Aqui, no nosso espaço, buscamos oferecer um ambiente seguro para que você possa entender e processar
+                suas emoções 
+            </h1>
+        </div>
+    </section>
+
+    <main class="sintomas-container">
+        <h1>O que você está sentindo agora?</h1>
+        <p class="intro-sintomas">Saiba mais sobre suas emoções e sentimentos:</p>
+
+        <div class="sintoma-item">
+            <div class="sintoma-imagem">
+                <img src="{{ url_for('static', filename='img/ansiedade.jpg') }}" alt="Angústia e Ansiedade">
+            </div>
+            <div class="sintoma-descricao">
+                <h2>Angústia e Ansiedade</h2>
+                <p>Sentir-se angustiado ou ansioso pode ser uma resposta a pressões externas e internas que parecem incontroláveis. Esses
+                    sentimentos podem se manifestar como uma sensação constante de aperto no peito, deficuldade em relaxar e uma mente que não
+                    descansa. Trabalhar essas emoções é fundamental para retomar o controle da sua vida e encontrar paz interior.
+                </p>
+            </div>
+        </div>
+
+        <div class="sintoma-item">
+            <div class="sintoma-imagem">
+                <img src="{{ url_for('static', filename='img/solidao.jpg') }}" alt="Solidão e Abandono">
+            </div>
+            <div class="sintoma-descricao">
+                <h2>Solidão e Abandono</h2>
+                <p>A solidão pode ser uma das experiências mais dolorosas da vida. Mesmo cercados por pessoas, podemos nos sentir desconectados
+                    e abandonados. Estas emoções podem gerar um ciclo de tristeza e desmotivação. Aqui, ajudamos você a reconhecer suas
+                    necessidades emocionais e a criar conexões mais saudáveis consigo mesmo e com os outros. 
+                </p>
+            </div>
+        </div>
+
+        <div class="sintoma-item">
+            <div class="sintoma-imagem">
+                <img src="{{ url_for('static', filename='img/tristeza.jpg') }}" alt="Tristeza e Falta de Autoconfiança">
+            </div>
+            <div class="sintoma-descricao">
+                <h2>Tristeza e Falta de Autoconfiança</h2>
+                <p>A tristeza pode ser um sinal de que algo não está bem. Se você se sente preso em um ciclo de desânimo ou falta de autoestima,
+                    saiba que não está sozinho. Juntos, vamos explorar a raiz desses sentimentos e trabalhar na construção de uma autoconfiança
+                    sólida, essencial para sua saúde emocional.
+                </p>
+            </div>
+        </div>
+
+        <div class="sintoma-item">
+            <div class="sintoma-imagem">
+                <img src="{{ url_for('static', filename='img/estresse.jpg') }}" alt="Insônia e Estresse">
+            </div>
+            <div class="sintoma-descricao">
+                <h2>Insônia e Estresse</h2>
+                <p>A relação entre nossos pensamentos e a qualidade do sono é profunda. O estresse acumulado pode levar à insônia, resultando
+                    em um ciclo vicioso que afeta sua disposição e bem-estar. Nossas técnicas terapêuticas focam em relaxamento e
+                    autoconhecimento, promovendo hábitos que favorecem um sono reparador.
+                </p>
+            </div>
+        </div>
+
+        <div class=" sintoma-item">
+            <div class="sintoma-imagem">
+                <img src="{{ url_for('static', filename='img/relacionamento.jpg') }}" alt="Mal-Estar nos Relacionamentos">
+            </div>
+            <div class="sintoma-descricao">
+                <h2>Mal-Estar nos Relacionamentos</h2>
+                <p>Os relacionamentos são parte crucial da nossa vida emocional. Quando surgem conflitos ou a comunicação falha, pode haver um
+                    impacto significativo emo nosso bem-estar. A terapia oferece um espaço para refletir sobre essas dinâmicas, além de
+                    estratégias que promovem uma comunicação mais clara e saudável.
+                </p>
+            </div>
+        </div>
+
+        <section class="agendar">
+            <h2>Nosso Compromisso</h2>
+            <p>Nosso trabalho é guiado pelo acolhimento, respeito e empatia. Estamos aqui para ajudá-lo(a) a navegar por esses sentimentos
+                e encontrar caminhos que promovam o autoconhecimento e a cura. Não hesite em entrar em contato para agendar uma sessão. Juntos,
+                podemos trilhar um caminho de transformações e bem-estar emocional.
+            </p>
+            <p>Estamos a disposição para ouvir você. <a href="https://wa.me/5515981480698?text=Olá%20Dra.%20Marisa!%20Gostaria%20de%20agendar%20uma%20consulta%20para%20conhecer%20melhor%20seu%20trabalho." target="_blank">Agende</a> uma conversa e dê o 
+                primeiro passo rumo à uma vida mais leve e plena.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Marisa Lara Psicanalista, Terapeuta Holística e Hipnoterapeuta</p>
+    </footer>
+</body>
+</html>
